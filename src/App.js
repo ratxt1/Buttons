@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import ButtonCore from './buttonCore.js'
+import Button from './Button.js'
 
 let buttons = {
   multipleChoiceButton: {
@@ -40,7 +40,7 @@ class App extends Component {
   getRandomButton() {
     let types = ["multipleChoiceButton", "matchmakingButton", "categoryButton"]
     let type = types[Math.floor(Math.random() * 3)]
-    return <ButtonCore 
+    return <Button 
       type = {type}
       onClick = {(e) => this.dummyFunction(e)}
       buttons = {buttons}
