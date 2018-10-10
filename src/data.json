@@ -1,0 +1,15 @@
+export default
+{
+  "buttons": {
+    "multipleChoiceButton": {
+      "text": "-4, -2, and 1"
+    },
+    
+    "matchmakingButton": {
+      "text": "PLAY"
+    },
+    "categoryButton": {
+      "text": "GRE" 
+    }
+  }
+}
