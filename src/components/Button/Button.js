@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './button.module.css';
 import classNames from 'classnames/bind';
+import ButtonBase from './ButtonBase.js'
 
 let cx = classNames.bind(styles);
 
@@ -13,10 +14,8 @@ class Button extends Component {
 
     className = cx(this.props.className)
 
-    return (
-        <div>
-          <button className={className} {...others} /> 
-        </div> 
+    return (  
+       <ButtonBase className={className} {...others} /> 
     );
   }
 }
