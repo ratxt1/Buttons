@@ -21,25 +21,3 @@
 .App-link {
   color: #61dafb;
 }
-
-.multipleChoiceButton {
-  font-size: 20px;
-  border-radius: 15px;
-  height: 60px;
-  width: 350px;
-}
-
-.matchmakingButton {
-  font-size: 20px;
-  background-color: #00BFFF; 
-  color: white;
-  height:40px;
-  width:180px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold 
-  
-}
-
-.categoryButton {
-  font-size: 30px;
-}

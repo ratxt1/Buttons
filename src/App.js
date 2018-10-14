@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
-import Button from './Button.js'
+import Button from './components/Button/Button.js'
 
 let buttons = {
   multipleChoiceButton: {
     name: "multipleChoiceButton",
-    text: "-4, -2, and 1"
-        
+    text: "-4, -2, and 1",
   },
   matchmakingButton: {
     name: "matchmakingButton",
-    text: "PLAY"
+    text: "PLAY",
   },
   categoryButton: {
     name: "categoryButton",
-    text: "GRE" 
+    text: "GRE",
+
   }
 }
 
@@ -40,10 +40,11 @@ class App extends Component {
   getRandomButton() {
     let types = ["multipleChoiceButton", "matchmakingButton", "categoryButton"]
     let type = types[Math.floor(Math.random() * 3)]
+    let text = buttons[type].text
+    let className = buttons[type].name
+    let props = {className: className, onClick: (e) => this.dummyFunction(e), children: text}
     return <Button 
-      type = {type}
-      onClick = {(e) => this.dummyFunction(e)}
-      buttons = {buttons}
+      {...props}
     />
   }
 
